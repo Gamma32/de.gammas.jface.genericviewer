@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_zTpGAANCEeOEz8i8Rj8Hug" elementId="org.eclipse.e4.ide.application" bindingContexts="_zTpGCQNCEeOEz8i8Rj8Hug">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_zTpGAQNCEeOEz8i8Rj8Hug" label="de.gammas.jface.genericviewer" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_zTptIgNCEeOEz8i8Rj8Hug">
+      <children xsi:type="advanced:Perspective" xmi:id="_zTptIwNCEeOEz8i8Rj8Hug">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_zTptJANCEeOEz8i8Rj8Hug">
+          <children xsi:type="basic:PartStack" xmi:id="_zTptJQNCEeOEz8i8Rj8Hug">
+            <children xsi:type="basic:Part" xmi:id="_GuTu8ANDEeOEz8i8Rj8Hug" elementId="de.gammas.jface.genericviewer.part.comboviewer" contributionURI="bundleclass://de.gammas.jface.genericviewer/de.gammas.jface.genericviewer.parts.combo.GenericComboViewerPart" label="ComboViewer"/>
+            <children xsi:type="basic:Part" xmi:id="_PONTcANDEeOEz8i8Rj8Hug" elementId="de.gammas.jface.genericviewer.part.listviewer" contributionURI="bundleclass://de.gammas.jface.genericviewer/de.gammas.jface.genericviewer.parts.list.GenericListViewerPart" label="ListViewer"/>
+            <children xsi:type="basic:Part" xmi:id="_iXNJUANeEeOEz8i8Rj8Hug" elementId="de.gammas.jface.genericviewer.part.tableviewer" contributionURI="bundleclass://de.gammas.jface.genericviewer/de.gammas.jface.genericviewer.parts.table.GenericTableViewerPart" label="TableViewer"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_zTptGwNCEeOEz8i8Rj8Hug" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_zTptHANCEeOEz8i8Rj8Hug" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_zTptHQNCEeOEz8i8Rj8Hug" label="Open" iconURI="platform:/plugin/de.gammas.jface.genericviewer/icons/sample.gif" command="_zTptEgNCEeOEz8i8Rj8Hug"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_zTptHgNCEeOEz8i8Rj8Hug" label="Save" iconURI="platform:/plugin/de.gammas.jface.genericviewer/icons/save_edit.gif" command="_zTptFQNCEeOEz8i8Rj8Hug"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_zTptHwNCEeOEz8i8Rj8Hug" label="Quit" command="_zTpGDANCEeOEz8i8Rj8Hug"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_zTptIANCEeOEz8i8Rj8Hug" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_zTptIQNCEeOEz8i8Rj8Hug" label="About" command="_zTptGANCEeOEz8i8Rj8Hug"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_zTptJwNCEeOEz8i8Rj8Hug">
+      <children xsi:type="menu:ToolBar" xmi:id="_zTptKANCEeOEz8i8Rj8Hug" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_zTptKQNCEeOEz8i8Rj8Hug" iconURI="platform:/plugin/de.gammas.jface.genericviewer/icons/sample.gif" command="_zTptEgNCEeOEz8i8Rj8Hug"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_zTptKgNCEeOEz8i8Rj8Hug" iconURI="platform:/plugin/de.gammas.jface.genericviewer/icons/save_edit.gif" command="_zTptFQNCEeOEz8i8Rj8Hug"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_zTpGDQNCEeOEz8i8Rj8Hug" elementId="de.gammas.jface.genericviewer.handler.quitCommand" contributionURI="bundleclass://de.gammas.jface.genericviewer/de.gammas.jface.genericviewer.handlers.QuitHandler" command="_zTpGDANCEeOEz8i8Rj8Hug"/>
+  <handlers xmi:id="_zTptEwNCEeOEz8i8Rj8Hug" elementId="de.gammas.jface.genericviewer.handler.openCommand" contributionURI="bundleclass://de.gammas.jface.genericviewer/de.gammas.jface.genericviewer.handlers.OpenHandler" command="_zTptEgNCEeOEz8i8Rj8Hug"/>
+  <handlers xmi:id="_zTptFgNCEeOEz8i8Rj8Hug" elementId="de.gammas.jface.genericviewer.handler.saveCommand" contributionURI="bundleclass://de.gammas.jface.genericviewer/de.gammas.jface.genericviewer.handlers.SaveHandler" command="_zTptFQNCEeOEz8i8Rj8Hug"/>
+  <handlers xmi:id="_zTptGQNCEeOEz8i8Rj8Hug" elementId="de.gammas.jface.genericviewer.handler.aboutCommand" contributionURI="bundleclass://de.gammas.jface.genericviewer/de.gammas.jface.genericviewer.handlers.AboutHandler" command="_zTptGANCEeOEz8i8Rj8Hug"/>
+  <bindingTables xmi:id="_zTptEANCEeOEz8i8Rj8Hug" bindingContext="_zTpGCQNCEeOEz8i8Rj8Hug">
+    <bindings xmi:id="_zTptEQNCEeOEz8i8Rj8Hug" keySequence="M1+Q" command="_zTpGDANCEeOEz8i8Rj8Hug"/>
+    <bindings xmi:id="_zTptFANCEeOEz8i8Rj8Hug" keySequence="M1+O" command="_zTptEgNCEeOEz8i8Rj8Hug"/>
+    <bindings xmi:id="_zTptFwNCEeOEz8i8Rj8Hug" keySequence="M1+S" command="_zTptFQNCEeOEz8i8Rj8Hug"/>
+    <bindings xmi:id="_zTptGgNCEeOEz8i8Rj8Hug" keySequence="M1+A" command="_zTptGANCEeOEz8i8Rj8Hug"/>
+  </bindingTables>
+  <rootContext xmi:id="_zTpGCQNCEeOEz8i8Rj8Hug" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_zTpGCgNCEeOEz8i8Rj8Hug" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_zTpGCwNCEeOEz8i8Rj8Hug" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_zTpGDANCEeOEz8i8Rj8Hug" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_zTptEgNCEeOEz8i8Rj8Hug" elementId="de.gammas.jface.genericviewer.open" commandName="openCommand"/>
+  <commands xmi:id="_zTptFQNCEeOEz8i8Rj8Hug" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_zTptGANCEeOEz8i8Rj8Hug" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <addons xmi:id="_zTpGAgNCEeOEz8i8Rj8Hug" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_zTpGAwNCEeOEz8i8Rj8Hug" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_zTpGBANCEeOEz8i8Rj8Hug" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_zTpGBQNCEeOEz8i8Rj8Hug" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_zTpGBgNCEeOEz8i8Rj8Hug" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_zTpGBwNCEeOEz8i8Rj8Hug" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_zTpGCANCEeOEz8i8Rj8Hug" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
