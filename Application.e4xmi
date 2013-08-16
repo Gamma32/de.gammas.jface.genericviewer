@@ -8,6 +8,8 @@
             <children xsi:type="basic:Part" xmi:id="_GuTu8ANDEeOEz8i8Rj8Hug" elementId="de.gammas.jface.genericviewer.part.comboviewer" contributionURI="bundleclass://de.gammas.jface.genericviewer/de.gammas.jface.genericviewer.parts.combo.GenericComboViewerPart" label="ComboViewer"/>
             <children xsi:type="basic:Part" xmi:id="_PONTcANDEeOEz8i8Rj8Hug" elementId="de.gammas.jface.genericviewer.part.listviewer" contributionURI="bundleclass://de.gammas.jface.genericviewer/de.gammas.jface.genericviewer.parts.list.GenericListViewerPart" label="ListViewer"/>
             <children xsi:type="basic:Part" xmi:id="_iXNJUANeEeOEz8i8Rj8Hug" elementId="de.gammas.jface.genericviewer.part.tableviewer" contributionURI="bundleclass://de.gammas.jface.genericviewer/de.gammas.jface.genericviewer.parts.table.GenericTableViewerPart" label="TableViewer"/>
+            <children xsi:type="basic:Part" xmi:id="_50oYcAZQEeOUgYJHojgXhA" elementId="de.gammas.jface.genericviewer.part.TreePathViewer" contributionURI="bundleclass://de.gammas.jface.genericviewer/de.gammas.jface.genericviewer.parts.tree.TreePathViewerPart" label="Tree(Path)Viewer"/>
+            <children xsi:type="basic:Part" xmi:id="_gd8E4AZvEeOAXumUHyoEow" elementId="de.gammas.jface.genericviewer.part.treeviewer" contributionURI="bundleclass://de.gammas.jface.genericviewer/de.gammas.jface.genericviewer.parts.tree.TreeViewerPart" label="TreeViewer"/>
           </children>
         </children>
       </children>

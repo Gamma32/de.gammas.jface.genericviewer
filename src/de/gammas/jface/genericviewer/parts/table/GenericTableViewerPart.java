@@ -16,6 +16,7 @@ import org.eclipse.swt.widgets.Composite;
 import de.gammas.jface.genericviewer.model.Person;
 
 public class GenericTableViewerPart {
+
 	@Inject
 	public GenericTableViewerPart(Composite parent) {
 		TableViewer<Person, List<Person>> tableViewer = new TableViewer<>(

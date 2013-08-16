@@ -1,8 +1,12 @@
 package de.gammas.jface.genericviewer.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Person {
 	private String name;
 	private String firstName;
+	private List<Person> children;
 
 	public Person(String name, String firstName) {
 		super();
@@ -24,6 +28,18 @@ public class Person {
 
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
+	}
+
+	public List<Person> getChildren() {
+		return this.children;
+	}
+
+	public void addChildren(Person children) {
+		if (this.children == null) {
+			this.children = new ArrayList<>();
+		}
+
+		this.children.add(children);
 	}
 
 }
