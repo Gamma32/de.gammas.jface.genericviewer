@@ -1,6 +1,9 @@
 
 package de.gammas.jface.genericviewer.parts.tree;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.annotation.PostConstruct;
 
 import org.eclipse.jface.viewers.ITreeContentProvider;
@@ -12,7 +15,7 @@ import org.eclipse.swt.widgets.Composite;
 import de.gammas.jface.genericviewer.model.Person;
 import de.gammas.jface.genericviewer.model.PersonRoot;
 
-public class TreeViewerPart {
+public class GenericTreeViewerPart {
 	@PostConstruct
 	public void postConstruct(Composite parent) {
 		TreeViewer<Person,PersonRoot> treeViewer = new TreeViewer<Person,PersonRoot>(parent);
@@ -22,34 +25,40 @@ public class TreeViewerPart {
 
 	}
 
-	class MyTreeContentProvider implements ITreeContentProvider{
+	class MyTreeContentProvider implements ITreeContentProvider<Person,PersonRoot>{
 
 		@Override
 		public void dispose() {
 		}
 
 		@Override
-		public void inputChanged(Viewer viewer, Object oldInput, Object newInput) {
+		public void inputChanged(Viewer viewer, PersonRoot oldInput, PersonRoot newInput) {
 
 		}
 
 		@Override
-		public Object[] getElements(Object inputElement) {
-			return new Object[]{((PersonRoot)inputElement).getRootPerson()};
+		public Person[] getElements(PersonRoot inputElement) {
+			Person[] personArray = new Person[0];
+			List<Person> persons = new ArrayList<>();
+			persons.add(inputElement.getRootPerson());
+			return persons.toArray(personArray);
 		}
 
 		@Override
-		public Object[] getChildren(Object parentElement) {
-			return ((Person)parentElement).getChildren().toArray();
+		public Person[] getChildren(Person parentElement) {
+			Person[] personArray = new Person[0];
+			List<Person> persons = new ArrayList<>();
+			persons.addAll(parentElement.getChildren());
+			return persons.toArray(personArray);
 		}
 
 		@Override
-		public Object getParent(Object element) {
+		public Person getParent(Person element) {
 			return null;
 		}
 
 		@Override
-		public boolean hasChildren(Object element) {
+		public boolean hasChildren(Person element) {
 			return (((Person)element).getChildren() != null);
 		}
 

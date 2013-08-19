@@ -10,6 +10,7 @@
             <children xsi:type="basic:Part" xmi:id="_iXNJUANeEeOEz8i8Rj8Hug" elementId="de.gammas.jface.genericviewer.part.tableviewer" contributionURI="bundleclass://de.gammas.jface.genericviewer/de.gammas.jface.genericviewer.parts.table.GenericTableViewerPart" label="TableViewer"/>
             <children xsi:type="basic:Part" xmi:id="_50oYcAZQEeOUgYJHojgXhA" elementId="de.gammas.jface.genericviewer.part.TreePathViewer" contributionURI="bundleclass://de.gammas.jface.genericviewer/de.gammas.jface.genericviewer.parts.tree.TreePathViewerPart" label="Tree(Path)Viewer"/>
             <children xsi:type="basic:Part" xmi:id="_gd8E4AZvEeOAXumUHyoEow" elementId="de.gammas.jface.genericviewer.part.treeviewer" contributionURI="bundleclass://de.gammas.jface.genericviewer/de.gammas.jface.genericviewer.parts.tree.TreeViewerPart" label="TreeViewer"/>
+            <children xsi:type="basic:Part" xmi:id="_VEVS4AjhEeOPJsNAWj-FIw" elementId="de.gammas.jface.genericviewer.part.genericTree" contributionURI="bundleclass://de.gammas.jface.genericviewer/de.gammas.jface.genericviewer.parts.tree.GenericTreeViewerPart" label="Generic Tree"/>
           </children>
         </children>
       </children>
