@@ -15,7 +15,7 @@ import de.gammas.jface.genericviewer.model.PersonRoot;
 public class TreeViewerPart {
 	@PostConstruct
 	public void postConstruct(Composite parent) {
-		TreeViewer<Person,PersonRoot> treeViewer = new TreeViewer<Person,PersonRoot>(parent);
+		TreeViewer treeViewer = new TreeViewer(parent);
 		treeViewer.setContentProvider(new MyTreeContentProvider());
 		treeViewer.setLabelProvider(new MyLabelProvider());
 		treeViewer.setInput(new PersonRoot());
