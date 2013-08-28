@@ -7,6 +7,7 @@ public class Person {
 	private String name;
 	private String firstName;
 	private List<Person> children;
+	private Person parent;
 
 	public Person(String name, String firstName) {
 		super();
@@ -38,8 +39,16 @@ public class Person {
 		if (this.children == null) {
 			this.children = new ArrayList<>();
 		}
-
+		children.setParent(this);
 		this.children.add(children);
+	}
+
+	public void setParent(Person parent){
+		this.parent = parent;
+	}
+
+	public Person getParent(){
+		return this.parent;
 	}
 
 }

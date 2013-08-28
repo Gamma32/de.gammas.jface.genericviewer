@@ -10,6 +10,7 @@ import org.eclipse.jface.viewers.ITreeContentProvider;
 import org.eclipse.jface.viewers.LabelProvider;
 import org.eclipse.jface.viewers.TreeViewer;
 import org.eclipse.jface.viewers.Viewer;
+import org.eclipse.jface.viewers.ViewerFilter;
 import org.eclipse.swt.widgets.Composite;
 
 import de.gammas.jface.genericviewer.model.Person;
@@ -22,6 +23,15 @@ public class GenericTreeViewerPart {
 		treeViewer.setContentProvider(new MyTreeContentProvider());
 		treeViewer.setLabelProvider(new MyLabelProvider());
 		treeViewer.setInput(new PersonRoot());
+		treeViewer.addFilter(new ViewerFilter<Person, PersonRoot>() {
+
+			@Override
+			public boolean select(Viewer<PersonRoot> viewer, Object parentElement,
+					Person element) {
+
+				return element.getName().contains("e");
+			}
+		});
 
 	}
 

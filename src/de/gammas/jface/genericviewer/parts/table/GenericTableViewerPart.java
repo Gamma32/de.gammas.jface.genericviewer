@@ -10,6 +10,7 @@ import org.eclipse.jface.viewers.IStructuredContentProvider;
 import org.eclipse.jface.viewers.TableViewer;
 import org.eclipse.jface.viewers.TableViewerColumn;
 import org.eclipse.jface.viewers.Viewer;
+import org.eclipse.jface.viewers.ViewerFilter;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Composite;
 
@@ -45,6 +46,7 @@ public class GenericTableViewerPart {
 					}
 
 				});
+
 
 		TableViewerColumn<Person, List<Person>> column = new TableViewerColumn<>(
 				tableViewer, SWT.NONE);

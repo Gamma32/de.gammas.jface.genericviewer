@@ -10,6 +10,7 @@ import org.eclipse.jface.viewers.IStructuredContentProvider;
 import org.eclipse.jface.viewers.LabelProvider;
 import org.eclipse.jface.viewers.ListViewer;
 import org.eclipse.jface.viewers.Viewer;
+import org.eclipse.jface.viewers.ViewerFilter;
 import org.eclipse.swt.widgets.Composite;
 
 import de.gammas.jface.genericviewer.model.Person;
@@ -47,7 +48,6 @@ public class GenericListViewerPart {
 				return element.getFirstName()+" "+element.getName();
 			}
 		});
-
 
 		listViewer.setInput(generateInput());
 	}

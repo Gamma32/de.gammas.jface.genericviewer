@@ -3,10 +3,17 @@ package de.gammas.jface.genericviewer.parts.tree;
 
 import javax.annotation.PostConstruct;
 
+import org.eclipse.jface.viewers.CellLabelProvider;
+import org.eclipse.jface.viewers.ColumnLabelProvider;
+import org.eclipse.jface.viewers.ISelectionChangedListener;
 import org.eclipse.jface.viewers.ITreeContentProvider;
 import org.eclipse.jface.viewers.LabelProvider;
+import org.eclipse.jface.viewers.SelectionChangedEvent;
 import org.eclipse.jface.viewers.TreeViewer;
+import org.eclipse.jface.viewers.TreeViewerColumn;
 import org.eclipse.jface.viewers.Viewer;
+import org.eclipse.jface.viewers.ViewerCell;
+import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Composite;
 
 import de.gammas.jface.genericviewer.model.Person;
@@ -19,6 +26,14 @@ public class TreeViewerPart {
 		treeViewer.setContentProvider(new MyTreeContentProvider());
 		treeViewer.setLabelProvider(new MyLabelProvider());
 		treeViewer.setInput(new PersonRoot());
+
+		treeViewer.addSelectionChangedListener(new ISelectionChangedListener() {
+
+			@Override
+			public void selectionChanged(SelectionChangedEvent event) {
+
+			}
+		});
 
 	}
 
